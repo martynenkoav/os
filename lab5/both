@@ -1,4 +1,4 @@
 #!/bin/bash
-./mem.bash&pid1=$!
-./mem2.bash&pid2=$!
-
+./exp11&pid1=$!
+./exp12&pid2=$!
+echo "correct"

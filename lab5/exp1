@@ -2,7 +2,7 @@
 ./mem.bash&pid0=$!
 rm res.csv
 rm top5_1.csv
-echo "Line, free, swap" >> res.csv
+echo "Time, MEM, Virt, Res, SHR, CPU, free, swap" >> res.csv
 echo "1, 2, 3, 4, 5" >> top5_1.csv
 while :; do
 	line=$(top -p $pid0 -b -n 1 | head -8 | tail -n +8)

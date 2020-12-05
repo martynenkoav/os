@@ -2,7 +2,7 @@
 ./mem2.bash&pid0=$!
 rm res12.csv
 rm top5_12.csv
-echo "Line, free, swap" >> res12.csv
+echo "Time, MEM, Virt, Res, SHR, CPU, free, swap" >> res12.csv
 while :; do
 	line=$(top -p $pid0 -b -n 1 | head -8 | tail -n +8)
 	free=$(top -b -n 1 | head -4 | tail -n +4 | awk '{print ""$6""}')

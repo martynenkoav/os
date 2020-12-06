@@ -4,8 +4,8 @@ K=$1
 N=$2
 
 if [[ $# == 0 ]]; then
-	K=10
-	N=310000
+	K=30
+	N=3100000
 fi
 
 for i in $(seq 1 $K); do

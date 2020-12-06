@@ -1,4 +1,4 @@
 #!/bin/bash
-./exp11&pid1=$!
-./exp12&pid2=$!
+./exp11&pid0=$!
+./exp12&pid1=$!
 echo "correct"

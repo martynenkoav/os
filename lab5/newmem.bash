@@ -1,9 +1,7 @@
 #!/bin/bash
 declare -a array
-cnt=0
-size=0
 if [[ $# == 0 ]]; then
-N=310000
+	N=3100000
 else 
 N=$1
 fi

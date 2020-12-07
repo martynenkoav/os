@@ -8,6 +8,6 @@ if [[ $# == 0 ]]; then
 	N=3100000
 fi
 
-for i in $(seq 1 $K); do
+for ((i=0; i < $K ; i++)); do
 	./newmem.bash $N&
 done
